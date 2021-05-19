@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        body {
+            background: rgb(46, 183, 218);
+            font: normal 15pt Cursive;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+        }
+        
+        div {
+            padding-top: 15px;
+            text-align: center;
+        }
+        
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            box-shadow: 3px 3px 10px black;
+            margin: auto;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>Hora do Dia
+            <h1>
+    </header>
+    <section>
+        <div id="msg">
+            Aqui vai aparecer as horas
+        </div>
+        <div id="foto">
+            <img id="imagem" src="manha.png" alt="imagem do dia">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em Video</p>
+    </footer>
+    <script>
+        function carregar() {
+            var msg = window.document.getElementById('msg')
+            var img = window.document.getElementById('imagem')
+            var data = new Date()
+            var hora = 23 //data.getHours()
+            msg.innerHTML = `Agora são ${hora} horas.`
+            if (hora >= 0 && hora < 12) {
+                //bom dia
+                img.src = 'manha.png'
+                document.body.style.background = '#f9bb80'
+            } else if (hora >= 12 && hora < 18) {
+                //Boa tarde
+                img.src = 'tarde.png'
+                document.body.style.background = '#c8a2c8'
+            } else {
+                // Boa noite
+                img.src = 'noite.png'
+                document.body.style.background = '#b793e9'
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(55, 180, 202, 0.966);
+            font: normal 20px cursive;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+        }
+        
+        input {
+            padding: 5px;
+        }
+        
+        section {
+            background: white;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px black;
+        }
+        
+        footer {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o Resultado!
+        </div>
+
+
+
+    </section>
+    <footer>
+        <p>&copy; Curso em Video</p>
+    </footer>
+
+    <script>
+    </script>
+</body>
+
+</html>

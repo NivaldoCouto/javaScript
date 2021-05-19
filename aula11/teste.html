@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAÇÃO</title>
+</head>
+
+<body>
+    <h1>SISTEMA DE PAÍS</h1>
+    PAÍS <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Analizar" onclick="verificar()">
+    <div id="res"></div>
+
+
+
+    <script>
+
+        function verificar() {
+
+            var txt = window.document.querySelector('input#txtp').value;
+            var rest = window.document.querySelector('div#res');
+            rest.innerHTML = `<p>O Pais atual é <strong>${txt}</strong>.</p>`
+            if (txt != 'Brasil') {
+                rest.innerHTML = `<p>Voce é estrangeiro!</p>`
+            } else {
+                rest.innerHTML += `<p>"Voce é BRASILEIRO!!!"</p>`
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

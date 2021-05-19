@@ -9,7 +9,7 @@ Curso de JavaScript do Curso em Video
 - linkedin.com/in/nivaldocouto-sistemasdeinformacao/
 - facebook.com/nivaldo.couto/
 - instagram.com/nivaldo_couto/
-- Discord.com/Nivaldo Couto#4374
+- discord.com/Nivaldo Couto#4374
 
 <!---
 NivaldoCouto/NivaldoCouto is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
